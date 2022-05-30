@@ -16,7 +16,6 @@ export class RefreshJwtGuard implements CanActivate {
     if (!refreshToken) {
       throw new UnauthorizedException('No refresh token');
     }
-    console.log('refresh guard', refreshToken);
     const decoded = await this._jwtTokensService.decodeRefreshToken(refreshToken);
     const user = await this._usersRepository.findOne({ id: decoded.id });
     if (!user) {
