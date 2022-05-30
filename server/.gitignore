@@ -1,6 +1,8 @@
-# compiled output
-/dist
-/node_modules
+# Compiled output
+dist/
+
+# Node modules
+node_modules/
 
 # Logs
 logs
@@ -15,11 +17,11 @@ lerna-debug.log*
 .DS_Store
 
 # Tests
-/coverage
-/.nyc_output
+coverage/
+.nyc_output/
 
 # IDEs and editors
-/.idea
+.idea/
 .project
 .classpath
 .c9/
@@ -33,3 +35,7 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Config
+.env
+ormconfig.json
